@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_troubleshooting.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<style>
+  .alert-message {
+    background-color: #FFF3DE;
+    border: 1px solid #A78241;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #000;
+  }
+
+</style>
+</head>
+<body>
+<div id="centercontent" style="padding:10px;">
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+
+<h2>Troubleshooting</h2>
+
+<p>You can often diagnose a problem with MultiDoge by looking at the Messages window by selecting the 'View |
+  <img width="16" height="16" title="Messages" alt="Messages" src="../images/en/v0_5/comment.png"/>&nbsp;Messages'
+  menu option.</p>
+<p>For a more detailed description of what has happened with MultiDoge there is a log file to look at. This is stored in
+  the 'log' directory in your user data directory and is called 'multidoge.log'. Use a simple text viewer like Notepad or TextEdit to read it.</p>
+
+<h2>Where MultiDoge stores your data</h2>
+<p>MultiDoge stores user specific data such as logs and the default multidoge.wallet in a "user data directory". This directory can be worked out as follows:</p>
+<ol>
+  <li>Check the the very top of the "Messages" tab for a message like "The user data directory is '/Users/jim/Library/Application Support/MultiDoge'"</li>
+  <li>Navigate to the MultiDoge installation directory and check for a file called "multidoge.properties". If there is, use this directory as
+    the user data directory. This is for backwards compatibility and for running everything from a USB drive.
+  </li>
+  <li>If none of these reveal the answer, use the technical approach given below.</li>
+</ol>
+
+<h2>Technical approach</h2>
+<p>This section is for technical users proficient with accessing environment variables. These are enclosed in "[]" such that [APPDATA] references the APPDATA environment variable.</p>
+<h3>Windows</h3>
+<p>Try one of the following locations, remembering that you may need to enable hidden directories</p>
+<ul>
+  <li><code>[APPDATA]/MultiDoge</code>. Windows (7,8): <code>C:\Documents and Settings\jim\AppData\Roaming\MultiDoge</code>
+  <li><code>[APPDATA]/MultiDoge</code>. Windows (XP and below): <code>C:\Documents and Settings\jim\Application Data\MultiDoge</code>
+</ul>
+
+<h3>Mac</h3>
+<p>In OSX the user Library directory is normally hidden. Follow the <a href="http://osxdaily.com/2009/02/25/show-hidden-files-in-os-x/">show hidden files</a> instructions to reveal it in the Finder.</p>
+<ul>
+  <li><code>[user.home]/Library/Application Support/MultiDoge</code>. OSX 10.5+: <code>/Users/jim/Library/Application Support/MultiDoge</code>
+</ul>
+
+<h3>Linux</h3>
+<p>In Linux the user home directory is normally visible.</p>
+<ul>
+  <li><code>[user.home]/MultiDoge</code>. Ubuntu/Debian: <code>/home/jim/MultiDoge</code>
+</ul>
+
+<h2>Related articles</h2>
+<p>Here are some related articles</p>
+<ul>
+  <li><a href="help_fileDescriptions.html">File descriptions</a></li>
+  <li><a href="help_walletBackups.html">Wallet backup and restore</a></li>
+  <li><a href="help_movingAWallet.html">Moving a wallet</a></li>
+</ul>
+
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+<br>
+</div>
+</body>
+
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_troubleshooting.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:41 GMT -->
+</html>

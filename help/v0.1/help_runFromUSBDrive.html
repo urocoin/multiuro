@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_runFromUSBDrive.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<style>
+  .alert-message {
+    background-color: #FFF3DE;
+    border: 1px solid #A78241;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #000;
+  }
+
+</style>
+</head>
+<body>
+<div id="centercontent" style="padding:10px;">
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+
+<h2>How to run MultiDoge from a USB drive</h2>
+<h3>Windows</h3>
+<p>Installing MultiDoge to run on a USB drive for Windows.</p>
+<ol>
+  <li>Insert your USB drive into your PC.</li>
+  <li>Run the MultiDoge Windows installer. On the screen with the question "Select the installation path:" click on the
+    "Browse" button and select a directory on your USB drive.
+  </li>
+  <li>Run the rest of the installation as normal.</li>
+  <li>Once the installation is done, in Explorer navigate to your USB drive's MultiDoge installation directory. It is the
+    directory with the "multidoge.exe" file.
+  </li>
+  <li>Create a new text file called (exactly) "multidoge.properties". Leave the file empty.
+    This is the MultiDoge configuration file. Having a copy in the installation directory (rather than the user's
+    application data) tells MultiDoge to run locally.
+  </li>
+  <li>To run MultiDoge locally, double click on the multidoge.exe file.</li>
+</ol>
+<p>You will have a single default wallet created, called multidoge.wallet. You can create new ones using the 'Create
+  Wallet' button and doing a save into your USB drive. You will be using a locally stored blockchain (called
+  multidoge.spvchain).</p>
+
+<h3>Linux</h3>
+<p>Installing MultiDoge to run on a USB drive for Linux.</p>
+<ol>
+  <li>Insert your USB drive into your Linux machine.</li>
+  <li>Run the MultiDoge Linux installer. On the screen with the question "Select the installation path:" click on the
+    "Browse" button and select a directory on your USB drive.
+  </li>
+  <li>Run the rest of the installation as normal.</li>
+  <li>Once the installation is done, navigate to your USB drive's MultiDoge installation directory. It is the directory
+    with the "multidoge-exe.jar" file.
+  </li>
+  <li>Create a new text file called (exactly) "multidoge.properties". Leave the file empty.
+    This is the MultiDoge configuration file. Having a copy in the installation directory (rather than the user's
+    application data) tells MultiDoge to run locally.
+  </li>
+  <li>To run MultiDoge locally, double click on the multidoge-exe.jar. If this does not start up the jar file, open a
+    command line to your installation directory and run "java -jar multidoge-exe.jar".
+  </li>
+</ol>
+
+<h3>Mac</h3>
+<p>On a Mac, copy the entire MultiDoge application onto your USB drive. The name of the application file will be
+  MultiDoge.app. Then go to where your wallets are stored and copy the files multidoge.properties and
+  multidoge.spvchain onto your USB drive into the same directory. You can then double click the MultiDoge.app
+  on your USB drive to run MultiDoge</p>
+<h2>Notes and Limitations</h2>
+<ol>
+  <li>The path of the wallets in the configuration file contains the USB drive letter which may change according to how
+    many other drives you have plugged in. In this case the wallets other than multidoge.wallet will not be found when
+    MultiDoge opens. You can just use the "Open Wallet" button to load them.
+  </li>
+  <li>With the instructions above, it assumes you have Java installed on the machine you plug into. You can also have a
+    "Java Runtime Environment" stored on the USB too so that it is guaranteed to run. (More details to follow).
+  </li>
+  <li>The installer will add some shortcuts for running MultiDoge pointing to the USB drive. These will not work if the
+    USB drive is removed.
+  </li>
+</ol>
+
+
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+<br>
+</div>
+</body>
+
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_runFromUSBDrive.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:51 GMT -->
+</html>

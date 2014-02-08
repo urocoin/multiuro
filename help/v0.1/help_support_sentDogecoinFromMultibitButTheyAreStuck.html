@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_support_sentDogecoinFromMultibitButTheyAreStuck.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<style>
+  .alert-message {
+    background-color: #FFF3DE;
+    border: 1px solid #A78241;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #000;
+  }
+
+</style>
+</head>
+<body>
+<div id="centercontent" style="padding:10px;">
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+
+<h2>I sent dogecoin from MultiDoge but they are stuck</h2>
+<h3>What is the symptom ?</h3>
+<p>You sent some dogecoin from MultiDoge but the dogecoin is stuck and never confirms.</p>
+<p>The dogecoins never arrive. Your balance seems to be wrong.</p>
+<p>In the '<img width="16" height="16" title="Transactions" alt="Transactions" src="../images/en/v0_5/transactions.png"/>&nbsp;Transactions' tab the transaction is shown with a square ("Seen by 1 peer") or, very rarely, a triangle ("Seen by 0 peers").
+</p>
+
+<h3>What does a status of a square or triangle mean ?</h3>
+<p>When you press the 'Send' button, MultiDoge broadcasts your transaction to a single dogecoind peer. It then listens on all its other connections to check that the transaction has been broadcast successfully.</p>
+<p>If you see a square or triangle in the transaction status this is a "did not broadcast" failure which means that the broadcast and propagation through the Dogecoin network was unsuccessful.</p>
+
+<h3>What can you do about it ?</h3>
+<p>There are two main reasons why a transaction gets stuck on "Seen by one peer" and does not propagate through the Dogecoin network.
+  These are:</p>
+
+<h4>You lost your network connection and the transaction did not get sent successfully to the peer (did not broadcast)</h4>
+<p>If you suspect this is the cause, do the following:</p>
+<ol>
+  <li>Close MultiDoge.</li>
+  <li>Fix your network connection and try it out using a browser.</li>
+  <li>
+    Restart MultiDoge and it will re-transmit any transactions that were unsuccessfully sent previously. It can sometimes take a couple of minutes to send a transaction and for it to propagate through the Dogecoin network.
+  </li>
+</ol>
+<h4>The peer received the transaction but "did not like it" (did not relay)</h4>
+
+<p>In this case it will not pass it onto other dogecoind instances. Your transaction will never propagate across the Dogecoin network and the recipient will not receive it. It also will not appear on sites such as blockchain.info.</p>
+
+<p>There are various reasons why a peer does not relay a transaction. In a rough order of frequency they are:</p>
+<ol>
+  <li>There are lots of tiny inputs (under 5432 satoshis) in your wallet and the transaction fires the anti-spam rules.</li>
+  <li>The fee is too small and the peer chooses not to relay it.</li>
+  <li>The transaction is a double spend. Doubles spends aren't relayed through the network.</li>
+  <li>Some other reason - this is not a definitive list.</li>
+</ol>
+
+<p>You can see the size of the transaction you created by clocking the "Show Transaction Details" button below the transaction list. The size of the transaction is shown in bytes. A typical fee for a transaction is 0.0001 (0.1 mDOGE).</p>
+
+<p>You can remove the transaction that never propagated by doing a 'Tools |
+  <img width="16" height="16" title="Reset" alt="Reset" src="../images/en/v0_5/resetTransactions.png"/>&nbsp;Reset Blockchain and Transactions'.
+</p>
+
+<h2>Related articles</h2>
+<p>Here are some related articles:</p>
+<ul>
+  <li><a href="help_sendingDogecoin.html">Sending dogecoin</a></li>
+  <li><a href="help_resetBlockchain.html">Reset blockchain and transactions</a></li>
+</ul>
+
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+<br>
+</div>
+</body>
+
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_support_sentDogecoinFromMultibitButTheyAreStuck.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:41 GMT -->
+</html>

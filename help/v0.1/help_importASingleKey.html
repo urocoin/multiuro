@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_importASingleKey.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<style>
+  .alert-message {
+    background-color: #FFF3DE;
+    border: 1px solid #A78241;
+    margin: 10px 0px;
+    padding: 10px;
+    color: #000;
+  }
+
+</style>
+</head>
+<body>
+<div id="centercontent" style="padding:10px;">
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+
+<h2>How to import a single private key</h2>
+<p>You can import a single private key into MultiDoge that you have produced externally, perhaps by vanitygen or
+  www.bitaddress.org.</p>
+
+<p>The easiest way to get the format exactly right is:
+<ol>
+  <li>Create a new wallet saved to a file, say, example.wallet.</li>
+  <li>Export the private keys, WITHOUT A PASSWORD, to a file example.key.</li>
+  <li>Open up the key file in a text editor. There is a big comment at the top that describes the format. It is simply
+    lines, each line containing the sipa format key - beginning with 5 - and the key creation date in a particular
+    format. You will have an example in there to copy as a new wallet has one key in it.
+  </li>
+  <li>Add in your new key and a date a bit before when you created it.</li>
+  <li>Import the key file back into the wallet.</li>
+  <li>MultiDoge will then replay the blocks to get the transactions and work out the balance.</li>
+</ol>
+<p>TIDY UP: It is good idea to then secure delete the key file so it is not lying around. If you want a quick key backup
+  you can do another key export but add a password so that the key export file is encrypted.</p>
+
+<p><center><a href="help_contents.html">Back to help contents</a></center></p>
+<br>
+</div>
+</body>
+
+
+<!-- Mirrored from www.multidoge.org/v0.1/help_importASingleKey.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 07 Feb 2014 18:47:51 GMT -->
+</html>
