@@ -6,9 +6,30 @@
     <title>MultiDoge</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/slimbox2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <script src="javascripts/respond.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascripts/slimbox2.js"></script>
+    <script type="text/javascript">
+    	$( document ).ready(function() {
+    		$('#screenshots').click(function(e) {
+    			$.slimbox([
+    				["images/md1.png", "Send Dogecoin"], 
+    				["images/md2.png", "Receive Dogecoin"], 
+    				["images/md3.png", "Dogecoin transactions"], 
+    				["images/md4.png", "Importing Dogecoin private keys"], 
+    				["images/md5.png", "Exporting Dogecoin private keys"], 
+    				["images/md6.png", "MultiDoge help"]], 
+    				0, 
+    				{loop: true});
+    			e.preventDefault();
+    		});
+		});
+    	
+    </script>
+
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -22,6 +43,7 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/langerhans/multidoge">View On GitHub</a></li>
+          <li class="fork" style="margin-left:6px;"><a id="screenshots" href="#">Screenshots</a></li>
           <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.0/multidoge-0.1.0-windows-setup.exe">Windows</a></li>
           <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.0/multidoge-0.1.0.dmg">OS X</a></li>
           <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.0/multidoge-0.1.0-linux.jar">Linux</a></li>
@@ -35,7 +57,7 @@
         <div id="title">
           <h1>MultiDoge</h1>
           
-          <center><img src="images/MultiDoge.png" width="300" height="300"/></center>
+          <center><img src="images/MultiDoge.png" width="300" height="300"/><p class="credits" style="margin-top:-5px;">Logo design by CitizenOlympic</p></center>
           
           <p>MultiDoge is a desktop Dogecoin client, powered by dogecoinj. Ported from the <a href="https://multibit.org/">MultiBit</a> Bitcoin client.</p>
           <hr>
