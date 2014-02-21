@@ -26,6 +26,13 @@
     				{loop: true});
     			e.preventDefault();
     		});
+        $('#qr').click(function(e) {
+          $.slimbox([
+            ["images/donate.png", "Much thanks. Wow."]], 
+            0, 
+            {loop: true});
+          e.preventDefault();
+        });
 		});
     	
     </script>
@@ -57,11 +64,14 @@
         <div id="title">
           <h1>MultiDoge</h1>
           
-          <center><img src="images/MultiDoge.png" width="300" height="300"/><p class="credits" style="margin-top:-5px;">Logo design by CitizenOlympic</p></center>
+          <center><img src="images/MultiDoge.png" width="200" height="200"/>
           
           <p>MultiDoge is a desktop Dogecoin client, powered by dogecoinj. Ported from the <a href="https://multibit.org/">MultiBit</a> Bitcoin client.</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/langerhans">langerhans</a> and <a href="https://github.com/kaloudis">kaloudis</a></span>
+          <span class="credits left" style="text-align:left;">
+            Project maintained by <a href="https://github.com/langerhans">langerhans</a> and <a href="https://github.com/kaloudis">kaloudis</a><br>
+            Logo design by <a href="http://richardbarrett.github.io/">Richard Barrett</a>
+          </span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
@@ -81,6 +91,11 @@
 <p>You can download the current version by clicking the icon corresponding to your operating system in the top right corner of this page.</p>
 
 <h3>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>We have detailed installation instructions <a href="help/v0.1/help_installing.html">right here.</a> Note, that you need to have Java installed on your computer. To upgrade from an older version of MultiDoge, see <a href="help/v0.1/help_installing.html">this help document.</a></p>
+
+<h3>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h3>
 
 <p>Please contact us if you would like to contribute.</p>
@@ -93,14 +108,12 @@
 <h3>
 <a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>OS X 10.9 Mavericks / 10.8 Mountain Lion</h3>
 
-<p>If you're having problems installing MultiBit on Mavericks or Mountain Lion please follow <a href="osx.html">this link</a>.</p>
+<p>If you're having problems installing MultiDoge on Mavericks or Mountain Lion please follow <a href="osx.html">this link</a>.</p>
 
 <h3>
 <a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Donations</h3>
 
-<p>If you'd like to donate to the developers please send Doge to the following address: <a href="dogeaddress:DTAhB19b1XDV8agAGE3zj7LG2tFtjHexgV">DTAhB19b1XDV8agAGE3zj7LG2tFtjHexgV</a>. Thank you.</p>
-
-<center><img src="images/donate.png" width="265"/></center>
+<p>If you'd like to donate to the developers please send Doge to the following address: <a href="dogecoin:DTAhB19b1XDV8agAGE3zj7LG2tFtjHexgV">DTAhB19b1XDV8agAGE3zj7LG2tFtjHexgV</a> (<a href="#" id="qr">QR Code</a>). Thank you.</p>
 
       </section>
 
