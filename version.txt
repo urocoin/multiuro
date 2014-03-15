@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 0.1.2
 message MANDATORY UPGRADE!!!
+=======
+0.1.1
+message Much bugfix. Wow.
+>>>>>>> FETCH_HEAD
