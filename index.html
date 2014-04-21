@@ -12,6 +12,7 @@
     <script src="javascripts/respond.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="javascripts/slimbox2.js"></script>
+    <script src="javascripts/jqsm.js"></script>
     <script type="text/javascript">
     	$( document ).ready(function() {
     		$('#screenshots').click(function(e) {
@@ -26,13 +27,64 @@
     				{loop: true});
     			e.preventDefault();
     		});
-        $('#qr').click(function(e) {
-          $.slimbox([
-            ["images/donate.png", "Much thanks. Wow."]], 
-            0, 
-            {loop: true});
-          e.preventDefault();
-        });
+	        $('#qr').click(function(e) {
+	          $.slimbox([
+	            ["images/donate.png", "Much thanks. Wow."]], 
+	            0, 
+	            {loop: true});
+	          e.preventDefault();
+	        });
+	        $('#win').click(function(e) {
+	          $.modal("\
+	          	<div>\
+		          	<h1>DISCLAIMER</h1>\
+		          	<p style='text-align:justify;'>\
+		          		It is important to know that MultiDoge is a so called light wallet. It is meant for your day to day transactions.\
+		          		If you are a miner, you should <b>NOT</b> use MultiDoge as your wallet. Receiving big transactions, such as pool payouts, can clog up a light wallet.\
+		          		This is a know issue with all light wallets and must be considered before usage.\
+		          		<br><br>\
+		          		The essence is: Do not use a light wallet to handle a big amount of transactions, mining being one example. Use <a href='http://dogecoin.com/'>the refrence client</a> instead.\
+		          		<br><br>\
+		          		The developers won't give any support in such cases and are not liable for your actions.\
+		          	</p>\
+		          	<p><a href='https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2-windows-setup.exe'><h3 style='text-align:center; color:#ffcc00;'>I read and understood the disclaimer. Download now!<h3><a><p>\
+	          	</div>");
+	          e.preventDefault();
+	        });
+	        $('#osx').click(function(e) {
+	          $.modal("\
+	          	<div>\
+		          	<h1>DISCLAIMER</h1>\
+		          	<p style='text-align:justify;'>\
+		          		It is important to know that MultiDoge is a so called light wallet. It is meant for your day to day transactions.\
+		          		If you are a miner, you should <b>NOT</b> use MultiDoge as your wallet. Receiving big transactions, such as pool payouts, can clog up a light wallet.\
+		          		This is a know issue with all light wallets and must be considered before usage.\
+		          		<br><br>\
+		          		The essence is: Do not use a light wallet to handle a big amount of transactions, mining being one example. Use <a href='http://dogecoin.com/'>the refrence client</a> instead.\
+		          		<br><br>\
+		          		The developers won't give any support in such cases and are not liable for your actions.\
+		          	</p>\
+		          	<p><a href='https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2.dmg'><h3 style='text-align:center; color:#ffcc00;'>I read and understood the disclaimer. Download now!<h3><a><p>\
+	          	</div>");
+	          e.preventDefault();
+	        });
+	        $('#lin').click(function(e) {
+	          $.modal("\
+	          	<div>\
+		          	<h1>DISCLAIMER</h1>\
+		          	<p style='text-align:justify;'>\
+		          		It is important to know that MultiDoge is a so called light wallet. It is meant for your day to day transactions.\
+		          		If you are a miner, you should <b>NOT</b> use MultiDoge as your wallet. Receiving big transactions, such as pool payouts, can clog up a light wallet.\
+		          		This is a know issue with all light wallets and must be considered before usage.\
+		          		<br><br>\
+		          		The essence is: Do not use a light wallet to handle a big amount of transactions, mining being one example. Use <a href='http://dogecoin.com/'>the refrence client</a> instead.\
+		          		<br><br>\
+		          		The developers won't give any support in such cases and are not liable for your actions.\
+		          	</p>\
+		          	<p><a href='https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2-linux.jar'><h3 style='text-align:center; color:#ffcc00;'>I read and understood the disclaimer. Download now!<h3><a><p>\
+	          	</div>");
+	          e.preventDefault();
+	        });
 		});
     	
     </script>
@@ -52,9 +104,9 @@
           <li class="fork"><a href="https://github.com/langerhans/multidoge">View On GitHub</a></li>
           <li class="fork" style="margin-left:6px;"><a id="screenshots" href="#">Screenshots</a></li>
 
-          <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2-windows-setup.exe">Windows</a></li>
-          <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2.dmg">OS X</a></li>
-          <li class="downloads"><a href="https://github.com/langerhans/multidoge/releases/download/v0.1.2/multidoge-0.1.2-linux.jar">Linux</a></li>
+          <li class="downloads"><a id="win" href="#">Windows</a></li>
+          <li class="downloads"><a id="osx" href="#">OS X</a></li>
+          <li class="downloads"><a id="lin" href="#">Linux</a></li>
           <li class="title">DOWNLOADS</li>
         </nav>
       </div><!-- end header -->
