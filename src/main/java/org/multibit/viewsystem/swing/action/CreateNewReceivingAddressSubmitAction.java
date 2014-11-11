@@ -15,9 +15,9 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.crypto.KeyCrypter;
-import com.google.dogecoin.crypto.KeyCrypterException;
+import com.google.uro.core.ECKey;
+import com.google.uro.crypto.KeyCrypter;
+import com.google.uro.crypto.KeyCrypterException;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.file.BackupManager;

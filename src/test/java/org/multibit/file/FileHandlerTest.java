@@ -16,12 +16,12 @@
 package org.multibit.file;
 
 
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.NetworkParameters;
-import com.google.dogecoin.core.Utils;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.crypto.KeyCrypter;
-import com.google.dogecoin.crypto.KeyCrypterScrypt;
+import com.google.uro.core.ECKey;
+import com.google.uro.core.NetworkParameters;
+import com.google.uro.core.Utils;
+import com.google.uro.core.Wallet;
+import com.google.uro.crypto.KeyCrypter;
+import com.google.uro.crypto.KeyCrypterScrypt;
 import com.google.protobuf.ByteString;
 import org.bitcoinj.wallet.Protos;
 import org.bitcoinj.wallet.Protos.ScryptParameters;

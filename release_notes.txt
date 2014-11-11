@@ -1,4 +1,4 @@
-MultiDoge release notes:
+MultiUro release notes:
 
 28 Aug 2014: 0.1.3
 + Prepare for AuxPoW fork

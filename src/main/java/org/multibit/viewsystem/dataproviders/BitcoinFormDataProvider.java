@@ -2,7 +2,7 @@ package org.multibit.viewsystem.dataproviders;
 
 
 /**
- * DataProvider for send dogecoin and send dogecoin confirm action
+ * DataProvider for send uro and send uro confirm action
  * @author jim
  *
  */

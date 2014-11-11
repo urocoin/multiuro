@@ -2,41 +2,41 @@
 Require the following structure on Windows
 see http://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx
 
-dogecoin.reg:
+uro.reg:
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\dogecoin]
-@="URL:Dogecoin Protocol"
+[HKEY_CLASSES_ROOT\uro]
+@="URL:Uro Protocol"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\dogecoin\DefaultIcon]
-@="multidoge.exe,1"
+[HKEY_CLASSES_ROOT\uro\DefaultIcon]
+@="multiuro.exe,1"
 
-[HKEY_CLASSES_ROOT\dogecoin\shell]
+[HKEY_CLASSES_ROOT\uro\shell]
 
-[HKEY_CLASSES_ROOT\dogecoin\shell\open]
+[HKEY_CLASSES_ROOT\uro\shell\open]
 
-[HKEY_CLASSES_ROOT\dogecoin\shell\open\command]
-@="\"C:\\Program Files\\MultiDoge-0.2.0beta4\\multidoge.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\uro\shell\open\command]
+@="\"C:\\Program Files\\MultiUro-0.2.0beta4\\multiuro.exe\" \"%1\""
 
 
 -->
 <registry>
-  <pack name="MultiDoge">
-    <key root="HKCR" keypath="dogecoin" />
-    <value root="HKCR" name="" keypath="dogecoin" string="URL:Dogecoin Protocol"/>
-    <value root="HKCR" name="URL Protocol" keypath="dogecoin" string=""/>
-    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="dogecoin" dword="1"/>
+  <pack name="MultiUro">
+    <key root="HKCR" keypath="uro" />
+    <value root="HKCR" name="" keypath="uro" string="URL:Uro Protocol"/>
+    <value root="HKCR" name="URL Protocol" keypath="uro" string=""/>
+    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="uro" dword="1"/>
 
-    <key root="HKCR" keypath="dogecoin\DefaultIcon" />
-    <value root="HKCR" name="" keypath="dogecoin\DefaultIcon" string="multidoge.exe,1"/>
+    <key root="HKCR" keypath="uro\DefaultIcon" />
+    <value root="HKCR" name="" keypath="uro\DefaultIcon" string="multiuro.exe,1"/>
 
-    <key root="HKCR" keypath="dogecoin\shell" />
+    <key root="HKCR" keypath="uro\shell" />
 
-    <key root="HKCR" keypath="dogecoin\shell\open" />
+    <key root="HKCR" keypath="uro\shell\open" />
 
-    <key root="HKCR" keypath="dogecoin\shell\open\command" />
-    <value root="HKCR" keypath="dogecoin\shell\open\command" name="" string="&quot;$INSTALL_PATH\multidoge.exe&quot; &quot;%1&quot;" />
+    <key root="HKCR" keypath="uro\shell\open\command" />
+    <value root="HKCR" keypath="uro\shell\open\command" name="" string="&quot;$INSTALL_PATH\multiuro.exe&quot; &quot;%1&quot;" />
 
   </pack>
 </registry>
